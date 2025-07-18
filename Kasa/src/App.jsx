@@ -15,17 +15,13 @@ function App() {
 
   return (
     <>
-      {/* <div>Container principal</div>
-      <Header/> */}
-      <Outlet/>
-      {/* <Footer/> */}
-
-      {/* <div>
-        <Home/>
-        <Accommodation/>
-        <About/>
-        <Error404/>
-      </div> */}
+      <div className='container-principal'>
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
