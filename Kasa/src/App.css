@@ -51,6 +51,74 @@ nav {
   text-decoration: underline;
 }
 
+/*Home Page */
+
+.section1Homepage {
+  max-width: 1240px;
+  height: 223px;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.section1Title {
+  position: relative;
+  bottom: 83%;
+  left: 18%;
+  color: white;
+  font-size: 48px;
+}
+
+.section1Image {
+  max-width: 1240px;
+  height: 223px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+  opacity: 50%;
+}
+
+.propertiesGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(246, 246, 246, 1);
+  margin-top: 45px;
+  margin-bottom: 45px;
+  border-radius: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 3%;
+}
+
+.propertieCard {
+  width: 340px;
+  height: 340px;
+  border-radius: 15px;
+  margin-bottom: 3%;
+  background: linear-gradient(#FFFFFF, #0A0A0A);
+}
+
+.propertieImg {
+  width: 340px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3%;
+  opacity: 65%;
+}
+
+.propertieTitle {
+  margin-left: 6%;
+  margin-right: 6%;
+  position: relative;
+  bottom: 77px;
+  color: white;
+}
+
+.card_link {
+  text-decoration: none;
+}
+
 /* Footer  */
 
 .footer {
