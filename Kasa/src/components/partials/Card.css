@@ -1,6 +1,8 @@
 .propertyInfo {
     padding-top: 25px;
     padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .propertyPicture {
@@ -14,21 +16,30 @@
 .arrow_left {
     position: absolute;
     top: 37%;
-    left: 22%;
+    left: 30px;
 }
 
 .arrow_right {
     position: absolute;
     top: 37%;
-    left: 76%;
+    right: 30px;
+}
+
+.pagination {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
 }
 
 /* SECTION 1 */
 
 .section1 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .titlesSection1 {
@@ -41,7 +52,7 @@
     font-size: 36px;
     line-height: 143%;
     color: #FF6060;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .propertyLocation {
@@ -49,7 +60,6 @@
     font-size: 18px;
     line-height: 143%;
     color: black;
-    margin-top: 0px;
 }
 
 .propertyHost {
@@ -76,9 +86,16 @@
 
 .section2 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18px;
+}
+
+.rating {
+    gap: 10px;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .propertyTags {
@@ -99,6 +116,10 @@
     align-items: center;
 }
 
+.banner {
+    position: relative;
+}
+
 
 /* SECTION 3 */
 
@@ -108,8 +129,7 @@
     align-items: center;
 }
 
-.description,
-.equipments {
+.collapse {
     width: 47%;
     height: 52px;
     background-color: #FF6060;
@@ -119,7 +139,55 @@
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     padding-left: 10px;
     padding-right: 10px;
+    flex-direction: column;
+}
+
+/* .collapse {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+} */
+
+.collapseHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.collapseArrow {
+    transition: transform 1s ease;
+}
+
+.collapseArrow.open {
+    transform: rotate(-180deg);
+}
+
+.collapseContent {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px;
+    color: black;
+    background-color: #F6F6F673;
+    animation: openCollapse 0.3s ease-in-out;
+}
+
+@keyframes openCollapse {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
