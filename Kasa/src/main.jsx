@@ -12,23 +12,23 @@ import Error404 from '@/pages/Error404'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
     children: [
       {
         path: "/",
-        element: <Home/>
+        element: <Home />
       },
       {
         path: "apropos",
-        element: <About/>
+        element: <About />
       },
       {
         path: "logement/:id",
-        element: <Accommodation/>
+        element: <Accommodation />
       },
       {
         path: "*",
-        element: <Error404/>
+        element: <Error404 />
       }
     ]
   }
@@ -36,6 +36,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )

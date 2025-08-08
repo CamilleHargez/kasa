@@ -1,0 +1,33 @@
+.imageAbout {
+    max-width: 1240px;
+    height: 223px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.sectionAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.collapseFiability,
+.collapseRespect,
+.collapseService,
+.collapseSecurity {
+    width: 1023px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+}

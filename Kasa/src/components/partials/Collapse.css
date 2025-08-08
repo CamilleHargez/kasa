@@ -1,0 +1,39 @@
+.collapseHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #FF6060;
+}
+
+.collapseArrow {
+    transition: transform 1s ease;
+}
+
+.collapseArrow.open {
+    transform: rotate(-180deg);
+}
+
+.collapseContent {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px;
+    color: black;
+    background-color: #F6F6F673;
+    animation: openCollapse 0.3s ease-in-out;
+}
+
+@keyframes openCollapse {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

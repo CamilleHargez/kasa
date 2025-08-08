@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+import './Home.css'
 import imgHomepage from '@/assets/kasa-image-homepage.jpg'
 import { Link } from 'react-router-dom'
 
