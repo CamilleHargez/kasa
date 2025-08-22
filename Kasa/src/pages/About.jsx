@@ -14,7 +14,7 @@ const About = () => {
 
     return (
         <>
-            <div>
+            <div className='section1Apropos'>
                 <img className='imageAbout' src={imgAbout} alt='Image nature forêt et mer'></img>
             </div>
             <div className='sectionAbout'>

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 1240px;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 1%;
 }
@@ -32,15 +32,16 @@ nav {
   color: black;
 }
 
-.header-ul li a:hover {
+.header-ul li a.active {
   text-decoration: underline;
+  color: black
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
   .header {
-    max-width: 375px;
+    max-width: 335px;
     width: 100%;
   }
 
@@ -62,9 +63,7 @@ nav {
     text-transform: uppercase;
   }
 
-  .header-ul li a:hover {
-    text-decoration: underline;
-  }
+
 
 
 }

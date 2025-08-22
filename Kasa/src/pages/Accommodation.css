@@ -145,3 +145,90 @@
     padding-right: 10px;
     flex-direction: column;
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .propertyInfo {
+        flex-direction: column;
+    }
+
+    .propertyPicture {
+        max-width: 335px;
+        height: 225px;
+    }
+
+
+
+    /* SECTION 1 */
+
+    .section1 {
+        max-width: 335px;
+        width: 100%;
+    }
+
+    .propertyTitle {
+        font-size: 18px;
+    }
+
+    .propertyLocation {
+        font-size: 14px;
+    }
+
+    .propertyHost {
+        justify-content: flex-end;
+    }
+
+    .hostName {
+        font-size: 12px;
+    }
+
+    .hostPicture {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* SECTION 2 */
+
+    .section2 {
+        flex-direction: row-reverse;
+        margin-top: 15px;
+    }
+
+    .rating {
+        gap: 5px;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .propertyTags {
+        display: flex;
+        gap: 10px;
+    }
+
+    .propertyTag {
+        font-size: 10px;
+        width: 100px;
+        height: 18px;
+    }
+
+
+
+
+    /* SECTION 3 */
+
+    .section3 {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 335px;
+    }
+
+    .description,
+    .equipments {
+        align-items: center;
+        width: 100%;
+        font-size: 13px;
+        padding: 0px;
+    }
+}

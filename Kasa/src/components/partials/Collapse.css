@@ -37,3 +37,20 @@
         transform: translateY(0);
     }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .collapseHeader {
+        width: 100%;
+    }
+
+    .collapseArrow {
+        width: 16px
+    }
+
+    .collapseContent {
+        font-size: 12px;
+        width: 100%;
+    }
+}
