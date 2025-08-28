@@ -68,8 +68,8 @@
   text-decoration: none;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+/* Small devices (phones, less than 375px) */
+@media (max-width: 375px) {
 
   .section1Homepage {
     max-width: 335px;

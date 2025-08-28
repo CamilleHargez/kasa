@@ -13,6 +13,13 @@ ul {
   margin-left: -40px
 }
 
+/* Small devices (phones, less than 375px) */
+@media (max-width: 375px) {
+
+  .container-principal{
+    align-items: center;
+  }
+}
 
 
 
