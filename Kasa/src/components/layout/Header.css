@@ -15,7 +15,7 @@
 }
 
 nav {
-  width: 30%;
+  width: 40%;
 }
 
 .header-ul {
@@ -37,11 +37,11 @@ nav {
   color: black
 }
 
-/* Small devices (phones, less than 375px) */
-@media (max-width: 375px) {
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
 
   .header {
-    max-width: 335px;
+    max-width: 768px;
     width: 100%;
   }
 
@@ -52,6 +52,7 @@ nav {
 
   nav {
     width: 50%;
+    padding-right: 20px;
   }
 
   .header-ul {
@@ -63,7 +64,18 @@ nav {
     text-transform: uppercase;
   }
 
+}
 
+/* Small devices (phones, less than 375px) */
+@media (max-width: 375px) {
 
+  .header {
+    max-width: 335px;
+  }
+
+    nav {
+    width: 50%;
+    padding-right: 0px;
+  }
 
 }

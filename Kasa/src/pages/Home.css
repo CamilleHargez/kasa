@@ -68,6 +68,13 @@
   text-decoration: none;
 }
 
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+.section1Title {
+    bottom: 111%;
+  }
+}
+
 /* Small devices (phones, less than 375px) */
 @media (max-width: 375px) {
 
