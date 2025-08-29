@@ -28,15 +28,15 @@ const Home = () => {
 
             <div className='propertiesGallery'>
                 {properties.map(property => (
-                        <Link key={property.id} to={`/logement/${property.id}`} className='card_link'>
+                    <Link key={property.id} to={`/logement/${property.id}`} className='card_link'>
                         <article className='propertieCard'>
                             <img src={property.cover} alt={property.title} className='propertieImg' />
                             <h3 className='propertieTitle'>{property.title}</h3>
                         </article>
-                         </Link>
-                    ))}
+                    </Link>
+                ))}
             </div >
-           
+
         </>
     );
 };

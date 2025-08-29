@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
-
-
 import './Accommodation.css'
+
 import Carousel from '@partials/Carousel'
 import Collapse from '@partials/Collapse'
 import Error404 from './Error404'
@@ -12,7 +11,7 @@ const URLapi = "http://localhost:8080/api"
 
 
 const Accommodation = () => {
-    const { id } = useParams(); // ← Récupère l'id depuis l'URL
+    const { id } = useParams();
     const [property, setProperty] = useState([])
     const [load, setLoad] = useState(true)
 
@@ -32,7 +31,6 @@ const Accommodation = () => {
                 return response.json()
             })
             .then(data => {
-                console.log(data)
                 setProperty(data)
                 setLoad(false)
             })
@@ -53,8 +51,7 @@ const Accommodation = () => {
 
     return (
         <>
-            {/* <div className='propertyInfo'> */}
-            <Carousel pictures={property.pictures}/>
+            <Carousel pictures={property.pictures} />
             <div className='propertyInfo'>
                 <div className='section1'>
                     <div className='titlesSection1'>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import arrowLeft from '@/assets/arrow_left.png'
 import arrowRight from '@/assets/arrow_right.png'
@@ -28,9 +28,13 @@ const Carousel = ({ pictures }) => {
     return (
         <div className='banner'>
             <img src={pictures[currentImage]} className='propertyPicture' />
-            <img className="arrow_left" onClick={previousImage} src={arrowLeft}></img>
-            <img className="arrow_right" onClick={nextImage} src={arrowRight}></img>
-            <p className='pagination'>{currentImage + 1} / {pictures.length}</p>
+            {pictures.length > 1 && 
+                <>
+                    <img className="arrow_left" onClick={previousImage} src={arrowLeft}></img>
+                    <img className="arrow_right" onClick={nextImage} src={arrowRight}></img>
+                    <p className='pagination'>{currentImage + 1} / {pictures.length}</p>
+                </>
+            }
         </div>
     );
 };
