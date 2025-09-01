@@ -26,10 +26,6 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
 
-    .sectionError {
-        margin-bottom: 0px;
-    }
-
     .ErrorCode {
         font-size: 96px;
     }

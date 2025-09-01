@@ -8,7 +8,7 @@ vi.mock("@/assets/arrow_top.png", () => ({
 }))
 
 describe("Collapse Component", () => {
-  // Test 1: Vérifier que le composant se rend correctement
+
   it("renders with title and content when open", () => {
     
     const mockToggle = vi.fn() 
@@ -26,7 +26,6 @@ describe("Collapse Component", () => {
     expect(screen.getByAltText("Flèche")).toBeInTheDocument()
   })
 
-  // Test 2: Vérifier que le contenu est caché quand fermé
   it("hides content when closed", () => {
     const mockToggle = vi.fn()
     const title = "Mon titre"
