@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react"
 import { describe, it, expect, vi } from "vitest"
 import Collapse from "../Collapse"
+import '@testing-library/jest-dom'
 
 
 vi.mock("@/assets/arrow_top.png", () => ({
