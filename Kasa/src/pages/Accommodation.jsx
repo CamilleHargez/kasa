@@ -15,10 +15,6 @@ const Accommodation = () => {
     const [property, setProperty] = useState([])
     const [load, setLoad] = useState(true)
 
-
-    const [descriptionOpen, setDescriptionOpen] = useState(false)
-    const [equipmentsOpen, setEquipmentsOpen] = useState(false)
-
     const rate = [1, 2, 3, 4, 5]
 
     /** Récupérer le logement correspondant à l'id */
@@ -83,13 +79,11 @@ const Accommodation = () => {
                 </div>
             </div>
             <div className='section3'>
-                <Collapse className='description' title="Description" isOpen={descriptionOpen} onToggle={() => setDescriptionOpen(!descriptionOpen)}>
+                <Collapse className='description' title="Description">
                     <p>{property.description}</p>
                 </Collapse>
                 <Collapse className='equipments'
                     title="Équipements"
-                    isOpen={equipmentsOpen}
-                    onToggle={() => setEquipmentsOpen(!equipmentsOpen)}
                 >
                     <ul>
                         {property.equipments.map((item, index) => (
